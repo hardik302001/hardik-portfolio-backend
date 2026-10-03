@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: hardik-portfolio-backend
+    runtime: go
+    buildCommand: go build -o bin/server main.go
+    startCommand: ./bin/server
+    envVars:
+      - key: PORT
+        value: "8080"
