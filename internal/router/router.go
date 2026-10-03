@@ -17,6 +17,7 @@ func New() *mux.Router {
 	api.HandleFunc("/about", handler.GetAbout).Methods("GET")
 	api.HandleFunc("/contact", handler.PostContact).Methods("POST")
 	api.HandleFunc("/health", handler.GetHealth).Methods("GET")
+	api.HandleFunc("/profile", handler.GetProfile).Methods("GET")
 
 	return r
 }
